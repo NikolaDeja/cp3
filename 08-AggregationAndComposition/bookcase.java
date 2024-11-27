@@ -24,8 +24,7 @@ public class bookcase {
 
         s.display();
         s.add(b1);
-        b1.add_chapter(c);
-        s.add(b2);
+        b1.add_chapter(c);        s.add(b2);
         s.display();
         s.remove(b1);
         s.display();

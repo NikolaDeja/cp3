@@ -23,16 +23,16 @@ public class C1 {
         this.age = age;
     }
 
-    @Override
-    public String toString() {
-        return name+","+age;
-    }
 
     public boolean isAdult(){
         if (age>=18) {
             return true;
         }
         return false;
+    }
+
+    public String toString(){
+        return getName()+","+getAge();
     }
 
     public static void main(String[] args) {
@@ -43,7 +43,7 @@ public class C1 {
         System.out.println(o.isAdult());
         o.setAge(17);
         System.out.println(o.isAdult());
-        System.out.println(o);
+        System.out.println(o.toString());
         
     }
 }
